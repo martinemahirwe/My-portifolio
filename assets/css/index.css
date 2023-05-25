@@ -399,9 +399,9 @@ button:hover{
     margin-bottom: 20px;
   }
    .my-Image{
-    height: 32vh;
-    margin-left: 20px;
-    margin-right: 25px;
+    height: 30vh;
+    margin-left: 10px;
+    margin-right: 30px;
   }
   footer {
     height: 20vh;
@@ -409,8 +409,11 @@ button:hover{
     column-gap: 6px;
     margin-top: 10px;
   }
-  
+  .project-container ol li{
+    margin-left: -480px;
+  }
   .search-input{
+    margin-left: -480px;
     margin-bottom: 20px;
     margin-left: 20px;
   }
@@ -437,12 +440,11 @@ button:hover{
   }
   .hero-container{
     position: relative;
-    height: 45vh;
+    height: auto;
   }
   .hero-content{
     margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left:30px;
   }
   .hero-content p{
    margin-bottom: 20px;
@@ -462,8 +464,9 @@ button:hover{
     margin-bottom: 20px;
   }
    .my-Image{
-    height: 33vh;
-    margin-left: 20px;
+    height: 30vh;
+    margin-left: 10px;
+    margin-right: 30px;
   }
   footer {
     height: 20vh;
@@ -478,4 +481,5 @@ button:hover{
   .search-button{
     top: 223px;
   }
+  
 }
