@@ -40,8 +40,12 @@ nav{
   column-gap: 30px;
 }
 header h2{
+  margin-left: 30px;
   font-size: 22px;
   color: #393646;
+}
+nav{
+  margin-right: 30px;
 }
 nav li{
   list-style: none;
@@ -53,12 +57,12 @@ nav li a{
 }
 .hero-container{
   background-color: #F4EEE0;
-  height: 50vh;
+  height: 37vh;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  
+}
+.hero-content{
+  margin-top: 30px;
 }
 .hero-content h6{
   margin-bottom: 0;
@@ -83,7 +87,7 @@ margin-bottom: 62px;
 color: #4F4557;
 
 }
-.project-container ol li a{
+.project-container li a{
   color: #4F4557;
   text-decoration: none;
 }
@@ -99,37 +103,38 @@ button{
 .about-container,.project-container,.contact-container{
   background-color: #F4EEE0;
   margin-top: 10px;
-  height: 50vh;
+  height: 35vh;
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+ 
 }
 .my-Image{
-  margin: 25px 0px 20px 0px;
- height: 35vh;
+ margin: 50px 20px 20px 30px;
+ height: 27vh;
  clip-path: circle();
  }
 footer{
   display: flex;
   flex-direction: row;
   background-color: #F4EEE0;
-  height: 30vh;
+  height: 25vh;
   margin-top: 20px;
   color:#4F4557;
   align-items: center;
   justify-content: center;
   column-gap: 20px;
 }
-.about-container p, .contact-container p,.project-container ol{
+.about-container p, .contact-container p,.project-container li{
   margin-bottom: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
   line-height: 25px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 100;
 }
-.project-container ol{
-  margin-top: 5px;
+.project-container {
+  height: 38vh;
 }
 
 h2{
@@ -164,6 +169,7 @@ bottom: 68px;
 .search-icon{
   height: 24px;
   margin-left: -130px;
+  margin-bottom: -45px;
   color: gray;
 }
 .search-input{
@@ -173,6 +179,7 @@ bottom: 68px;
     width: 130px;
     background-color: #393646;
     position: relative;
+    margin-left: 30px;
 }
 .search-input::placeholder{
   font-size: 15px;
@@ -203,7 +210,7 @@ button:hover{
     height: 15vh;
   }
   header h2{
-    margin-left: 10px;
+    margin-left: 20px;
     font-size: 15px;
   }
   h6{
@@ -220,18 +227,18 @@ button:hover{
   font-size: 13px;
  }
   nav{
-    margin-right: 10px;
+    margin-right: 20px;
   }
   .hero-container{
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 85vh; 
-    padding-bottom: 50px;
+    height: 80vh; 
   }
   .hero-content{
     margin-left:20px;
     margin-right: 20px;
+    margin-top: -15px;
   }
   .hero-content p{
    margin-bottom: 20px;
@@ -246,7 +253,7 @@ button:hover{
   .contact-container{
     height: auto;
   }
-  .about-container p, .project-container ol li,.contact-container p{
+  .about-container p, .project-container li,.contact-container p{
     margin-right: 20px;
     margin-left:20px;
     margin-bottom: 25px;
@@ -255,9 +262,10 @@ button:hover{
   }
   
   .my-Image{
-    height: 25vh;
+    height: 28vh;
     margin-top: 50px;
     margin-bottom: 0px;
+    margin-left: 20px;
   }
   footer {
     height: 20vh;
@@ -267,15 +275,13 @@ button:hover{
     line-height: 16px;
     margin-top: 10px;
   }
-  .project-container ol li{
-    margin-left: -140px;
-  }
+  
   .search-input{
-    margin-left: -140px;
     margin-bottom: 20px;
+    margin-left: 20px;
   }
   .search-button{
-    bottom: 20px;
+    top: 190px;
   }
 }
 @media (min-width: 481px) and (max-width: 768px){
@@ -296,11 +302,19 @@ button:hover{
   }
   .hero-container{
     position: relative;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    height: 81vh; 
+    padding-bottom: 20px;
+    
   }
   .hero-content{
     margin-bottom: 20px;
-    margin-left:10px;
+    margin-left:20px;
+    margin-right: 20px;
+    margin-top: -10px;
+
+    
   }
   .hero-content p{
    margin-bottom: 20px;
@@ -315,14 +329,14 @@ button:hover{
     height: auto;
   }
   .about-container p, .project-container p,.contact-container p{
-    margin-right: 10px;
-    margin-left:10px;
+    margin-right: 20px;
+    margin-left:20px;
     margin-bottom: 20px;
   }
    .my-Image{
-    height: 30vh;
-    margin-right: 10px;
-    margin-left: 10px;
+    height: 33vh;
+    margin-left: 20px;
+    margin-bottom: 0;
   }
   footer {
     height: 20vh;
@@ -330,15 +344,16 @@ button:hover{
     column-gap: 6px;
     margin-top: 10px;
   }
-  .project-container ol li{
-    margin-left: -232px;
+  .project-container li{
+    margin-left: 20px;
   }
+  
   .search-input{
-    margin-left: -232px;
     margin-bottom: 20px;
+    margin-left: 20px;
   }
   .search-button{
-    bottom: 20px;
+    top: 182px;
   }
 }
 
@@ -364,7 +379,7 @@ button:hover{
   }
   .hero-content{
     margin-bottom: 20px;
-    margin-left:30px;
+    margin-right: 20px;
   }
   .hero-content p{
    margin-bottom: 20px;
@@ -378,15 +393,15 @@ button:hover{
   .contact-container{
     height: auto;
   }
-  .about-container p, .project-container p,.contact-container p{
-    margin-right: 30px;
-    margin-left:30px;
+  .about-container p, .project-container li,.contact-container p{
+    margin-right: 20px;
+    margin-left:20px;
     margin-bottom: 20px;
   }
    .my-Image{
-    height: 30vh;
-    margin-left: 10px;
-    margin-right: 30px;
+    height: 32vh;
+    margin-left: 20px;
+    margin-right: 25px;
   }
   footer {
     height: 20vh;
@@ -394,15 +409,13 @@ button:hover{
     column-gap: 6px;
     margin-top: 10px;
   }
-  .project-container ol li{
-    margin-left: -480px;
-  }
+  
   .search-input{
-    margin-left: -480px;
     margin-bottom: 20px;
+    margin-left: 20px;
   }
   .search-button{
-    bottom: 20px;
+    top: 223px;
   }
 }
 
@@ -424,11 +437,12 @@ button:hover{
   }
   .hero-container{
     position: relative;
-    height: auto;
+    height: 45vh;
   }
   .hero-content{
     margin-bottom: 20px;
-    margin-left:30px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   .hero-content p{
    margin-bottom: 20px;
@@ -442,15 +456,14 @@ button:hover{
   .contact-container{
     height: auto;
   }
-  .about-container p, .project-container p,.contact-container p{
-    margin-right: 30px;
-    margin-left:30px;
+  .about-container p, .project-container li,.contact-container p{
+    margin-right: 20px;
+    margin-left:20px;
     margin-bottom: 20px;
   }
    .my-Image{
-    height: 30vh;
-    margin-left: 10px;
-    margin-right: 30px;
+    height: 33vh;
+    margin-left: 20px;
   }
   footer {
     height: 20vh;
@@ -458,14 +471,11 @@ button:hover{
     column-gap: 6px;
     margin-top: 10px;
   }
-  .project-container ol li{
-    margin-left: -480px;
-  }
   .search-input{
-    margin-left: -480px;
     margin-bottom: 20px;
+    margin-left: 20px;
   }
   .search-button{
-    bottom: 20px;
+    top: 223px;
   }
 }
