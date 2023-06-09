@@ -400,8 +400,7 @@ button:hover{
   }
    .my-Image{
     height: 30vh;
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-left: 20px;
   }
   footer {
     height: 20vh;
@@ -441,7 +440,8 @@ button:hover{
   }
   .hero-content{
     margin-bottom: 20px;
-    margin-left:30px;
+    margin-left:25px;
+    margin-right: 20px;
   }
   .hero-content p{
    margin-bottom: 20px;
@@ -462,8 +462,7 @@ button:hover{
   }
    .my-Image{
     height: 30vh;
-    margin-left: 10px;
-    margin-right: 30px;
+    margin-left: 20px;
   }
   footer {
     height: 20vh;
