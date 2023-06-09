@@ -1,9 +1,14 @@
 *{
   font-family: Roboto,Arial;
   box-sizing: border-box;
+  overflow: hidden;
 }
 main{
   padding-bottom: 1.5em;
+  background-color: #F4EEE0;
+}
+footer, header{
+  height: 17vh;
 }
 .inputs{
 margin-top: 20px;
