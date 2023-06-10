@@ -1,0 +1,121 @@
+*{
+  font-family: Roboto,Arial;
+  box-sizing: border-box;
+}
+main{
+  padding-bottom: 2em;
+  background-color: #F4EEE0;
+}
+footer, header{
+  height: 15vh;
+}
+.inputs{
+margin-top: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+  
+}
+input{
+  
+  font-size: 13px;
+  padding: 10px 400px 10px 2px;
+  border-radius: 5px;
+  border: 1px solid #393646;
+}
+#date{
+  padding: 10px 450px 10px 2px;
+}
+h2{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #393646;
+}
+.button6{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+.sign-button{
+  padding-left: 105px;
+  padding-right: 100px;
+  font-size: 14px;
+}
+.age{
+  padding: 10px 0px 10px 2px;
+  margin-left: 30px;
+  border: 1px solid #393646 ;
+  border-radius: 5px;
+  color: #393646;
+  font-size: 14px;
+}
+.gender{
+  margin-left: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+.check{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  color: #393646;
+}
+h2:hover,h4:hover{
+  color:#10011d;
+  transition: 1s ease-in-out;
+}
+h1:hover,h3:hover{
+color: #1f0336;
+}
+h6:hover,h5:hover{
+  color:#140422
+}
+nav li a:hover{
+  color: #170229;
+}
+button:hover{
+  background-color: #140422;
+}
+
+@media (min-width:320px) and (max-width:480px){
+  input{
+    padding: 10px 100px 10px 2px;
+  }
+  #date{
+    padding: 10px 155px 10px 2px;
+  }
+  .gender{
+    margin-left: 5px;
+    width: 20px;
+    height: 20px;
+    }
+    .age{
+      margin-left: 5px;
+      width: 50px;
+    }
+}
+@media (min-width:481px) and (max-width:768px){
+  input{
+    padding: 10px 200px 10px 2px;
+  }
+  #date{
+    padding: 10px 255px 10px 2px;
+  }
+  .gender{
+  margin-left: 5px;
+  width: 20px;
+  height: 20px;
+  }
+  .age{
+    margin-left: 5px;
+    width: 50px;
+  }
+}

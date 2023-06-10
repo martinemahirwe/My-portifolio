@@ -399,8 +399,9 @@ button:hover{
     margin-bottom: 20px;
   }
    .my-Image{
-    height: 30vh;
+    height: 32vh;
     margin-left: 20px;
+    margin-right: 25px;
   }
   footer {
     height: 20vh;
@@ -408,7 +409,6 @@ button:hover{
     column-gap: 6px;
     margin-top: 10px;
   }
- 
   .search-input{
     margin-bottom: 20px;
     margin-left: 20px;
@@ -436,12 +436,12 @@ button:hover{
   }
   .hero-container{
     position: relative;
-    height: auto;
+    height: 45vh;
   }
   .hero-content{
     margin-bottom: 20px;
-    margin-left:25px;
-    margin-right: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
   }
   .hero-content p{
    margin-bottom: 20px;
@@ -461,7 +461,7 @@ button:hover{
     margin-bottom: 20px;
   }
    .my-Image{
-    height: 30vh;
+    height: 33vh;
     margin-left: 20px;
   }
   footer {
