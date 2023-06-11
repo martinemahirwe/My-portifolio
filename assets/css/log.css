@@ -7,6 +7,11 @@ main{
   padding-bottom: 160px;
   margin: 0; 
 }
+#icon{
+  color: #393646;
+  font-size: 15px;
+  display: none;
+}
 .inputs{
 margin-top: 20px;
 display: flex;
@@ -24,6 +29,7 @@ input{
 }
 
 h2{
+  padding-top: 50px;
   font-size: 22px;
   display: flex;
   align-items: center;
@@ -60,6 +66,39 @@ button:hover{
     padding-left: 30px;
     padding-right: 30px;
   }
+  #icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+   }
+   nav{
+    height:0;
+    position: absolute;
+    top:20px;
+    left: 0;
+    right: 0;
+    transition: 0.2s;
+  
+   }
+   nav ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+   }
+  nav li a{
+    padding-bottom: 15px;
+    line-height: 25px;
+  }
+  nav.active {
+    height: 20vh;
+  }
+  nav.active ul{
+  opacity: 1;
+  }
 }
 @media (min-width:481px) and (max-width: 768px){
   input{
@@ -68,5 +107,10 @@ button:hover{
   .log-button{
     padding-left: 70px;
     padding-right: 70px;
+  }
+}
+@media (min-width: 1201){
+  h2{
+    padding-top: 60px;
   }
 }

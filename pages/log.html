@@ -17,19 +17,26 @@
   <header>
     <h2>Chance M</h2>
     <nav>
+      <ul>
       <li><a href="/index.html">Home</a></li>
       <li><a href="/pages/blogs.html">Blogs</a></li>
       <li class="sign"><a href="/pages/sign.html">Sign Up</a></li>
+    </ul>
     </nav>
+    <label id="icon">
+      <i class="fas fa-bars"></i>
+    </label> 
+    
   </header>
  <main>
+  <div class="render-nav"></div>
   <h2>Log In</h2>
   <div class="inputs-container">
     <div  class="inputs"><input type="text" placeholder="username"></div>
     <div  class="inputs"><input type="password" placeholder="Enter your password"></div>
     
     </div>
-    <div class="button6"><button  class="log-button">Log In</button>
+    <div class="button6"><a href="./admin.html"><button  class="log-button">Log In</button></a>
     </div>
  </main> 
  <footer>
@@ -51,5 +58,14 @@
  </footer>
 
  <script src="https://kit.fontawesome.com/279ba9e7bb.js" crossorigin="anonymous"></script>
+ <script>
+  const icon = document.querySelector('#icon');
+  
+  icon.addEventListener('click',()=>{
+    nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  });
+
+</script>
 </body>
 </html>
