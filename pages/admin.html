@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/index.css">
+  <link rel="stylesheet" href="../assets/css/admin.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/279ba9e7bb.js" crossorigin="anonymous"></script>
+  <title>admin page</title>
+</head>
+<body>
+  <header>
+    <a href="../index.html"><h2>Chance M</h2></a>
+    <nav>
+      <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/pages/blogs.html">Blogs</a></li>
+      <li class="sign"><a href="/pages/sign.html">Sign Up</a></li>
+    </ul>
+      <label id="icon">
+        <i class="fas fa-bars"></i>
+      </label> 
+    </nav>
+  </header>
+  <main>
+    <div class="side-menu">
+      <div>
+        <a href="#manage-articles"><li id="manage-articles">Manage Articles</li></a>
+        <a href="#manage-messages"> <li id="manage-messages">Messages </li></a>
+    </div>
+    </div>
+    <div class="dash-content">
+     <div class="art-buttons">
+      <button id="add-new-article">Add Article</button>
+     </div>
+     <div id="manage-art">
+      <h3>Manage Articles</h3>
+        <div class="article-data1">
+          <p>N</p>
+          <p>Title</p>
+          <p>Author</p>
+          <p>Action</p>
+        </div>
+        <div class="article-data">
+          <p>1</p>
+          <p>Phone App</p>
+          <p>Martine</p>
+          <p class="edit">Edit</p>
+          <p class="delete">Delete</p>
+      </div>
+        <div class="article-data">
+          <p>2</p>
+          <p>Games</p>
+          <p>Martine</p>
+          <p class="edit">Edit</p>
+          <p class="delete">Delete</p>
+      </div>
+    </div>
+     <dialog id="modal1">
+      <div class="add-article">
+        <h3>Add new Article</h3>
+        <p>
+          Title: 
+        </p>
+        <input type="text" placeholder="Article Title" class="input11">
+        <p>
+          Author: 
+        </p>
+        <input type="text" placeholder="Article Author" class="input11">
+        <p>
+          Description:
+        </p>
+        <textarea placeholder="Article Description"></textarea> 
+        <p>
+          Date: </p>
+          <input type="date" class="input11">
+         <p>
+          Choose image: <select name="" id="">
+        <option value="image">image1</option>
+        <option value="image">image2</option>
+        <option value="image">image3</option>
+        <option value="image">image4</option>
+        <option value="image">image5</option>
+       </select>
+        </p>
+        <div><button class="art-button">CREATE ARTICLE</button></div>
+        </div>
+     </dialog>
+
+     <dialog id="modal2">
+      <div id="manage-mes">
+        <h3>Manage Messages</h3>
+          <div class="article-data1">
+            <p>N</p>
+            <p>Title</p>
+            <p>Author</p>
+            <p>Action</p>
+          </div>
+          <div class="article-data">
+            <p>1</p>
+            <p>Querry</p>
+            <p>Martine</p>
+            <p class="edit">view</p>
+            <p class="delete">Delete</p>
+        </div>
+          <div class="article-data">
+            <p>2</p>
+            <p>Work</p>
+            <p>Martine</p>
+            <p class="edit">view</p>
+            <p class="delete">Delete</p>
+        </div>
+       </div>
+       <button class="close-message">CLOSE MESSAGES</button>
+      </dialog>
+      <dialog id="modal3">
+        <div class="edit-article">
+          <h3>Edit Article</h3>
+          <p>
+            Title: 
+          </p>
+          <input type="text" value="Phone App" class="input11">
+          <p>
+            Author: 
+          </p>
+          <input type="text" value="Martine" class="input11">
+          <p>
+            Description:
+          </p>
+          <textarea placeholder="
+          Here is popular game rock-paper scissors,it was funny building it
+          and it's new version of 
+          this game, it got a lot fun 
+          and more features."></textarea> 
+          <p>
+            Date: </p>
+            <input type="date" class="input11">
+           <p>
+            Choose image: <select name="" id="">
+          <option value="image">image1</option>
+          <option value="image">image2</option>
+          <option value="image">image3</option>
+          <option value="image">image4</option>
+          <option value="image">image5</option>
+         </select>
+          </p>
+          <div><button class="art-button1">EDIT ARTICLE</button></div>
+          </div>
+       </dialog>
+       <dialog id="modal4">
+        <div class="delete-article">
+          <h3>Delete Article</h3>
+          <p>
+            Title: 
+          </p>
+          <input type="text" value="Phone App" class="input11">
+          <p>
+            Author: 
+          </p>
+          <input type="text" value="Martine" class="input11">
+          <p>
+            Description:
+          </p>
+          <textarea value="Here is popular game
+          rock-paper scissors, 
+          it was funny building it
+          and it's new version of 
+          this game, it got a lot fun 
+          and more features."></textarea> 
+          <p>
+            Date: </p>
+            <input type="date" class="input11">
+           <p>
+            Choose image: <select name="" id="">
+          <option value="image">image1</option>
+          <option value="image">image2</option>
+          <option value="image">image3</option>
+          <option value="image">image4</option>
+          <option value="image">image5</option>
+         </select>
+          </p>
+          <div><button class="art-button2">DELETE ARTICLE</button></div>
+          </div>
+       </dialog>
+    </div>
+  </main>
+
+
+  <script>
+    const element1 = document.querySelector('#add-new-article');
+   const element2 = document.querySelector('#manage-messages');
+   const element3 = document.querySelector('.edit');
+   const element4 = document.querySelector('.delete');
+    const modal1 = document.querySelector('#modal1');
+    const modal2 = document.querySelector('#modal2');
+    const modal3 = document.querySelector('#modal3');
+    const modal4 = document.querySelector('#modal4');
+    const btn1 = document.querySelector('.close-message');
+    const btn2 = document.querySelector('.art-button');
+    const btn3 = document.querySelector('.art-button1');
+    const btn4 = document.querySelector('.art-button2');
+
+      element1.addEventListener('click',()=>{
+      modal1.showModal();
+    });
+  
+     element2.addEventListener('click',()=>{
+      modal2.showModal();
+    });
+    element3.addEventListener('click',()=>{
+      modal3.showModal();
+    });
+    element4.addEventListener('click',()=>{
+      modal4.showModal();
+    });
+
+    btn1.addEventListener('click',()=>{
+      modal2.close();
+    });
+    btn2.addEventListener('click',()=>{
+      modal1.close();
+    });
+    btn3.addEventListener('click',()=>{
+      modal3.close();
+    });
+    btn4.addEventListener('click',()=>{
+      modal4.close();
+    });
+  </script>
+</body>
+</html>

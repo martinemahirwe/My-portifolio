@@ -1,6 +1,7 @@
 *{
   font-family: Roboto,Arial;
   box-sizing: border-box;
+  cursor: pointer;
 }
 body{
   margin: 0;
@@ -31,8 +32,13 @@ header{
   color: #393646;
   text-decoration: none;
 }
+ #icon{
+  color: #393646;
+  font-size: 15px;
+  display: none;
+}
 
-nav{
+nav ul{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -109,6 +115,44 @@ button{
   flex-direction: column;
  
 }
+h{
+  margin-left: 30px;
+  margin-bottom: -20px;
+  padding-top: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #4F4557;
+}
+
+label{
+  margin-bottom: -10px;
+  color: #4F4557;
+  font-size: 15px;
+  font-weight: 500;
+}
+.message-section input{
+  padding: 8px 0px 8px 2px;
+  border-radius: 5px;
+  border: 1px solid #393646;
+}
+.contact-container{
+  height: 88vh;
+}
+.message-section{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  row-gap: 13px;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+.message{
+  border-radius: 5px;
+}
+.message-button{
+  margin-top: 10px;
+  font-size: 13px;
+}
 .my-Image{
  margin: 50px 40px 20px 30px;
  height: 27vh;
@@ -130,7 +174,7 @@ footer{
   margin-left: 30px;
   margin-right: 30px;
   line-height: 25px;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 100;
 }
 .project-container {
@@ -204,10 +248,10 @@ button:hover{
 
 @media (min-width: 320px) and (max-width: 480px){
   main{
-    padding-top: 60px;
+    padding-top: 120px;
   }
   header{
-    height: 15vh;
+    height: 20vh;
   }
   header h2{
     margin-left: 20px;
@@ -222,18 +266,43 @@ button:hover{
   h1{
     font-size: 12px;
   }
- nav li{
-  margin-left: 10px;
-  font-size: 13px;
+  #icon{
+  display: flex;
+  margin-right: 20px;
  }
-  nav{
-    margin-right: 20px;
-  }
+ nav{
+  height:0;
+  position: absolute;
+  top:20px;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+
+ }
+ nav ul {
+  display: block;
+  width: fit-content;
+  margin: 80px auto 0 auto;
+  text-align: center;
+  transition: 0.5s;
+  opacity: 0;
+ }
+nav li a{
+  padding-bottom: 15px;
+  line-height: 25px;
+}
+nav.active {
+  height: 20vh;
+}
+nav.active ul{
+opacity: 1;
+}
   .hero-container{
     position: relative;
     display: flex;
     flex-direction: column;
-    height: 80vh; 
+    height: 71vh; 
+    
   }
   .hero-content{
     margin-left:20px;
@@ -250,9 +319,7 @@ button:hover{
   .project-container{
     height: auto;
   }
-  .contact-container{
-    height: auto;
-  }
+  
   .about-container p, .project-container li,.contact-container p{
     margin-right: 20px;
     margin-left:20px;
@@ -262,7 +329,7 @@ button:hover{
   }
   
   .my-Image{
-    height: 28vh;
+    height: 25vh;
     margin-top: 50px;
     margin-bottom: 0px;
     margin-left: 20px;
@@ -274,6 +341,17 @@ button:hover{
     font-size: 11px;
     line-height: 16px;
     margin-top: 10px;
+  }
+  .message-section{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    row-gap: 13px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  .contact-container{
+    height: 101vh;
   }
   
   .search-input{
@@ -325,9 +403,7 @@ button:hover{
   .project-container{
     height: auto;
   }
-  .contact-container{
-    height: auto;
-  }
+ 
   .about-container p, .project-container p,.contact-container p{
     margin-right: 20px;
     margin-left:20px;
@@ -343,6 +419,18 @@ button:hover{
     font-size: 15px;
     column-gap: 6px;
     margin-top: 10px;
+  }
+  .message-section{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    row-gap: 13px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  .contact-container{
+    height: 111vh;
+    
   }
   .project-container li{
     margin-left: 20px;
@@ -391,7 +479,8 @@ button:hover{
     height: auto;
   }
   .contact-container{
-    height: auto;
+    height: 110vh;
+    
   }
   .about-container p, .project-container li,.contact-container p{
     margin-right: 20px;
@@ -399,9 +488,15 @@ button:hover{
     margin-bottom: 20px;
   }
    .my-Image{
+<<<<<<< HEAD
     height: 32vh;
     margin-left: 20px;
     margin-right: 25px;
+=======
+    height: 30vh;
+    margin-left: 30px;
+    margin-right: 5px;
+>>>>>>> 1be095e (blog page)
   }
   footer {
     height: 20vh;
@@ -409,12 +504,27 @@ button:hover{
     column-gap: 6px;
     margin-top: 10px;
   }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  
+>>>>>>> 7c7cbf1 (blog page)
   .search-input{
+=======
+  .project-container ol li{
+    margin-left: -360px;
+  }
+  .search-input{
+    margin-left: -360px;
+>>>>>>> 1be095e (blog page)
     margin-bottom: 20px;
     margin-left: 20px;
   }
   .search-button{
     top: 223px;
+  }
+  .message-section{
+    margin-left: 20px;
   }
 }
 
@@ -436,12 +546,26 @@ button:hover{
   }
   .hero-container{
     position: relative;
+<<<<<<< HEAD
     height: 45vh;
   }
   .hero-content{
     margin-bottom: 20px;
+<<<<<<< HEAD
    margin-left: 20px;
    margin-right: 20px;
+=======
+    margin-left: 20px;
+    margin-right: 20px;
+=======
+    height: 40vh;
+  }
+  .hero-content{
+    margin-bottom: 20px;
+    margin-left:10px;
+    margin-right: 30px;
+>>>>>>> 1be095e (blog page)
+>>>>>>> 7c7cbf1 (blog page)
   }
   .hero-content p{
    margin-bottom: 20px;
@@ -453,7 +577,7 @@ button:hover{
     height: auto;
   }
   .contact-container{
-    height: auto;
+    height: 110vh;
   }
   .about-container p, .project-container li,.contact-container p{
     margin-right: 20px;
@@ -461,8 +585,14 @@ button:hover{
     margin-bottom: 20px;
   }
    .my-Image{
+<<<<<<< HEAD
     height: 33vh;
     margin-left: 20px;
+=======
+    height: 30vh;
+    margin-left: 30px;
+    margin-right: 5px;
+>>>>>>> 1be095e (blog page)
   }
   footer {
     height: 20vh;
@@ -477,5 +607,7 @@ button:hover{
   .search-button{
     top: 223px;
   }
-  
+  .message-section{
+    margin-left: 20px;
+  }
 }
