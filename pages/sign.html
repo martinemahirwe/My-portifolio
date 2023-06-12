@@ -14,12 +14,17 @@
 </head>
 <body>
   <header>
-    <h2>Chance M</h2>
+    <a href="../index.html"><h2>Chance M</h2></a>
     <nav>
+      <ul>
       <li><a href="/index.html">Home</a></li>
       <li><a href="/pages/blogs.html">Blogs</a></li>
       <li class="sign"><a href="/pages/sign.html">Sign Up</a></li>
+    </ul>
     </nav>
+    <label id="icon">
+      <i class="fas fa-bars"></i>
+    </label>
   </header>
  <main>
   <h2>Sign Up</h2>
@@ -56,5 +61,15 @@
  </footer>
 
  <script src="https://kit.fontawesome.com/279ba9e7bb.js" crossorigin="anonymous"></script>
+
+ <script>
+  const icon = document.querySelector('#icon');
+  
+  icon.addEventListener('click',()=>{
+    nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+  });
+
+</script>
 </body>
 </html>
