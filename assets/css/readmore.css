@@ -8,11 +8,18 @@
   font-size: 16px;
   font-weight: 100;
   margin-bottom: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 
 }
 .blog-image{
-  height: 30vh;
-  margin-top: 30px;
+  height: 34vh;
+  width: 350px;
+  margin-top: 17px;
+
+}
+h4{
+  margin-top: -15px;
 }
 h4,h5{
   margin-left: 30px;
@@ -33,6 +40,7 @@ main{
   padding-top: auto;
 }
 textarea{
+  margin-left: 30px;
   margin-top: 30px;
   color: #4F4557;
   opacity: 0.7;
@@ -42,6 +50,7 @@ textarea{
   display: block;
   font-size: 10px;
   margin-top: 10px;
+  margin-left: 30px;
 
 }
 .latest-comments{
@@ -52,9 +61,9 @@ textarea{
 }
 
 h5{
-  margin-top: 5px;
   color: #393646;
   font-weight: 600;
+  margin-top:5px;
 }
  h2:hover,h4:hover{
   color:#10011d;
@@ -79,29 +88,25 @@ button:hover{
   }
   .section{
     font-size: 13px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
   
   }
   .strong{
     font-size: 12px;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   h3{
-    margin-left: 10px;
+    margin-left: 20px;
     font-size: 15px;
-    margin-bottom: 10px;
   }
   .blog-image{
     height: 25vh;
     margin-left:20px;
-  }
-  .blogs-container{
-    margin-top: 40px;
-    margin-bottom: 10px;
+    width: 230px;
   }
   textarea,.comment-button,h5,.latest-comments{
-    margin-left: 10px;
+    margin-left: 20px;
   }
   #icon{
     display: flex;
@@ -149,7 +154,7 @@ button:hover{
 @media (min-width: 481px) and (max-width: 768px){
   
   .section{
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 0;
@@ -164,10 +169,9 @@ button:hover{
   h3{
     margin-left: 20px;
     font-size: 17px;
-    margin-bottom: 10px;
   }
   .blog-image{
-    height: 31vh;
+    height: 32vh;
     margin-left:20px;
   }
   .blogs-container{
@@ -188,9 +192,9 @@ button:hover{
 
 @media (min-width: 769px) and (max-width: 1024px){
   .section{
-    font-size: 17px;
-    margin-left: 40px;
-    margin-right: 40px;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 0;
   }
   
@@ -199,24 +203,19 @@ button:hover{
   }
   .strong{
     font-size: 15px;
-    margin-left: 40px;
+    margin-left: 20px;
   }
   h3{
-    margin-left: 40px;
-    font-size: 19px;
+    margin-left: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
   }
   .blog-image{
     height: 33vh;
     margin-left:20px;
   }
-  .blogs-container{
-    margin-top: 30px;
-    margin-bottom: 10px;
-    height: 27vh;
-  }
   textarea,.comment-button,h5,.latest-comments{
-    margin-left: 40px;
+    margin-left: 20px;
   }
   footer {
     height: 20vh;
@@ -227,9 +226,9 @@ button:hover{
 }
 @media (min-width: 1025px) and (max-width: 1200px){
   .section{
-    font-size: 19px;
-    margin-left: 50px;
-    margin-right: 50px;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 0;
   }
   main{
@@ -237,25 +236,21 @@ button:hover{
   }
   .strong{
     margin-top: 0;
-    font-size: 16px;
-    margin-left: 50px;
+    font-size: 14px;
+    margin-left: 20px;
   }
   h3{
-    margin-left: 50px;
-    font-size: 19px;
+    margin-left: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
   }
   .blog-image{
     height: 35vh;
     margin-left:20px;
   }
-  .blogs-container{
-    margin-top: 30px;
-    margin-bottom: 10px;
-    height: 25vh;
-  }
+
   textarea,.comment-button,h5,.latest-comments{
-    margin-left: 50px;
+    margin-left: 20px;
   }
   footer {
     height: 20vh;

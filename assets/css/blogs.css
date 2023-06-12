@@ -13,15 +13,14 @@ main{
 }
 .blogs-container p{
   color: #4F4557;
-  margin-top: 5px;
+  margin-top: 15px;
   margin-bottom: 0px;
+  margin-left: 30px;
   font-size: 16px;
  }
  .blogs-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 50vh;
   background-color: #F9F1E0;
   margin-top: 20px;
@@ -36,7 +35,9 @@ main{
  h3{
   display: flex;
   color: #393646;
-  margin-bottom: -20px;
+  margin-bottom: -10px;
+  padding-top: 50px;
+  margin-left: 30px;
  }
  
 h4 a{
@@ -46,14 +47,6 @@ h4 a{
   text-decoration: none;
   margin-left: 30px;
   margin-top: -12px;
-}
-h2{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #393646;
-  font-size: 22px;
-  padding-top: 20px;
 }
 h2:hover,h4:hover{
   color:#10011d;
@@ -75,36 +68,26 @@ button:hover{
 @media (min-width: 320px) and (max-width: 480px){
   .blogs-container p{
     font-size: 13px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 0;
-  }
-  h2{
-    font-size: 16px;
-    margin-bottom: 30px;
   }
   h4 a{
     margin-top: -18px;
     font-size: 14px;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   h3{
-    margin-left: 10px;
+    margin-left: 20px;
     font-size: 15px;
-    margin-bottom: 30px;
   }
   .blog-image{
-    position: absolute;
-    top: -23px;
-    height: 20vh;
-    left:10px;
+    height: 25vh;
+    margin-left: 20px;
   }
   .blogs-container{
-    margin-bottom: 30px;
+    height: 32vh;
   }
-  .blog-title{
-    padding-top: 10px;
-   }
    #icon{
     display: flex;
     align-items: center;
@@ -155,10 +138,6 @@ button:hover{
     margin-right: 20px;
     margin-bottom: 0;
   }
-  h2{
-    font-size: 20px;
-    margin-bottom: 30px;
-  }
   h4 a{
     margin-top: -18px;
     font-size: 16px;
@@ -167,15 +146,14 @@ button:hover{
   h3{
     margin-left: 20px;
     font-size: 17px;
-    margin-bottom: 60px;
   }
   .blog-image{
-    height: 29vh;
+    height: 32vh;
     margin-left: 20px;
   }
   .blogs-container{
     margin-bottom: 30px;
-    height: 53vh;
+    height: 43vh;
   }
   footer {
     height: 20vh;
@@ -187,65 +165,52 @@ button:hover{
 
 @media (min-width: 769px) and (max-width: 1024px){
  .blogs-container p{
-    font-size: 18px;
-    margin-left: 40px;
-    margin-right: 40px;
+    font-size: 17px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 0;
-  }
-  h2{
-    font-size: 23px;
-    margin-bottom: 30px;
   }
   h4 a{
     margin-top: -18px;
     font-size: 17px;
-    margin-left: 40px;
+    margin-left: 20px;
   }
   h3{
-    margin-left: 40px;
+    margin-left: 20px;
     font-size: 20px;
-    margin-bottom: 70px;
   }
   .blog-image{
-    position: absolute;
-    top: -55px;
-    height: 30vh;
-    left:40px;
+    height: 37vh;
+    margin-left: 20px;
   }
   .blogs-container{
-    margin-bottom: 30px;
-    height: 60vh;
+    height: 50vh;
   }
 
 }
 @media (min-width: 1025px) and (max-width: 1200px){
   .blogs-container p{
-    font-size: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+    font-size: 17px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-bottom: 0;
-  }
-  h2{
-    font-size: 25px;
-    margin-bottom: 30px;
   }
   h4 a{
     margin-top: -18px;
     font-size: 18px;
-    margin-left: 50px;
+    margin-left: 20px;
   }
   h3{
-    margin-left: 50px;
+    margin-left: 20px;
     font-size: 22px;
-    margin-bottom: 70px;
   }
   .blog-image{
-    height: 33vh;
+    height: 40vh;
     margin-left:20px;
   }
   .blogs-container{
     margin-bottom: 30px;
-    height: 62vh;
+    height: 52vh;
   }
    footer {
     height: 20vh;
